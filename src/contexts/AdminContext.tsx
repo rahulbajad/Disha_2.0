@@ -42,9 +42,6 @@ export const AdminProvider: React.FC<AdminProviderProps> = ({ children }) => {
 
   const login = async (username: string, password: string) => {
     try {
-      const response = await fetch('http://localhost:5000/api/admin/login', {
-      }
-      )
       const response = await fetch('http://localhost:3001/api/admin/login', {
         method: 'POST',
         headers: {
